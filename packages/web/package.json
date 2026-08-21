@@ -14,7 +14,7 @@
   "dependencies": {
     "@aws-amplify/ui-react": "^6.15.5",
     "@aws-sdk/client-lambda": "^3.1103.0",
-    "@aws-sdk/credential-provider-cognito-identity": "^3.972.66",
+    "@aws-sdk/credential-provider-cognito-identity": "^3.972.67",
     "@digital-go-jp/tailwind-theme-plugin": "^1.0.1",
     "@floating-ui/react": "^0.27.20",
     "@headlessui/react": "^2.2.10",
