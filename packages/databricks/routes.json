@@ -1,0 +1,248 @@
+[
+ {
+  "api": "main",
+  "method": "DELETE",
+  "path": "/file/{fileName}",
+  "entry": "deleteFile"
+ },
+ {
+  "api": "main",
+  "method": "POST",
+  "path": "/predict",
+  "entry": "predict"
+ },
+ {
+  "api": "main",
+  "method": "POST",
+  "path": "/predict/title",
+  "entry": "predictTitle"
+ },
+ {
+  "api": "main",
+  "method": "POST",
+  "path": "/chats",
+  "entry": "createChat"
+ },
+ {
+  "api": "main",
+  "method": "GET",
+  "path": "/chats",
+  "entry": "listChats"
+ },
+ {
+  "api": "main",
+  "method": "GET",
+  "path": "/chats/{chatId}",
+  "entry": "findChatById"
+ },
+ {
+  "api": "main",
+  "method": "DELETE",
+  "path": "/chats/{chatId}",
+  "entry": "deleteChat"
+ },
+ {
+  "api": "main",
+  "method": "PUT",
+  "path": "/chats/{chatId}/title",
+  "entry": "updateTitle"
+ },
+ {
+  "api": "main",
+  "method": "GET",
+  "path": "/chats/{chatId}/messages",
+  "entry": "listMessages"
+ },
+ {
+  "api": "main",
+  "method": "POST",
+  "path": "/chats/{chatId}/messages",
+  "entry": "createMessages"
+ },
+ {
+  "api": "main",
+  "method": "POST",
+  "path": "/systemcontexts",
+  "entry": "createSystemContext"
+ },
+ {
+  "api": "main",
+  "method": "GET",
+  "path": "/systemcontexts",
+  "entry": "listSystemContexts"
+ },
+ {
+  "api": "main",
+  "method": "DELETE",
+  "path": "/systemcontexts/{systemContextId}",
+  "entry": "deleteSystemContext"
+ },
+ {
+  "api": "main",
+  "method": "PUT",
+  "path": "/systemcontexts/{systemContextId}/title",
+  "entry": "updateSystemContextTitle"
+ },
+ {
+  "api": "main",
+  "method": "POST",
+  "path": "/image/generate",
+  "entry": "generateImage"
+ },
+ {
+  "api": "main",
+  "method": "POST",
+  "path": "/file/url",
+  "entry": "getFileUploadSignedUrl"
+ },
+ {
+  "api": "main",
+  "method": "GET",
+  "path": "/file/url",
+  "entry": "getFileDownloadSignedUrl"
+ },
+ {
+  "api": "tac",
+  "method": "POST",
+  "path": "/exapps/invoke",
+  "entry": "invokeExApp"
+ },
+ {
+  "api": "tac",
+  "method": "GET",
+  "path": "/exapps/histories",
+  "entry": "listInvokeExAppHistories"
+ },
+ {
+  "api": "tac",
+  "method": "GET",
+  "path": "/exapps/history",
+  "entry": "getInvokeExAppHistory"
+ },
+ {
+  "api": "tac",
+  "method": "GET",
+  "path": "/exapps/artifact-file",
+  "entry": "getArtifactFile"
+ },
+ {
+  "api": "tac",
+  "method": "POST",
+  "path": "/teams",
+  "entry": "createTeam"
+ },
+ {
+  "api": "tac",
+  "method": "GET",
+  "path": "/teams",
+  "entry": "listTeams"
+ },
+ {
+  "api": "tac",
+  "method": "GET",
+  "path": "/teams/{teamId}",
+  "entry": "getTeam"
+ },
+ {
+  "api": "tac",
+  "method": "PUT",
+  "path": "/teams/{teamId}",
+  "entry": "updateTeam"
+ },
+ {
+  "api": "tac",
+  "method": "DELETE",
+  "path": "/teams/{teamId}",
+  "entry": "deleteTeam"
+ },
+ {
+  "api": "tac",
+  "method": "GET",
+  "path": "/teams/{teamId}/raw",
+  "entry": "getRawTeam"
+ },
+ {
+  "api": "tac",
+  "method": "GET",
+  "path": "/teams/{teamId}/exapps",
+  "entry": "listTeamExApps"
+ },
+ {
+  "api": "tac",
+  "method": "POST",
+  "path": "/teams/{teamId}/exapps",
+  "entry": "createExApp"
+ },
+ {
+  "api": "tac",
+  "method": "PUT",
+  "path": "/teams/{teamId}/exapps/{exAppId}",
+  "entry": "updateExApp"
+ },
+ {
+  "api": "tac",
+  "method": "DELETE",
+  "path": "/teams/{teamId}/exapps/{exAppId}",
+  "entry": "deleteExApp"
+ },
+ {
+  "api": "tac",
+  "method": "GET",
+  "path": "/teams/{teamId}/exapps/{exAppId}",
+  "entry": "getExApp"
+ },
+ {
+  "api": "tac",
+  "method": "GET",
+  "path": "/teams/{teamId}/exapps/{exAppId}/raw",
+  "entry": "getRawTeamApp"
+ },
+ {
+  "api": "tac",
+  "method": "POST",
+  "path": "/teams/{teamId}/exapps/{exAppId}/copy",
+  "entry": "copyExApp"
+ },
+ {
+  "api": "tac",
+  "method": "DELETE",
+  "path": "/teams/{teamId}/exapps/{exAppId}/history",
+  "entry": "deleteInvokeExAppHistory"
+ },
+ {
+  "api": "tac",
+  "method": "GET",
+  "path": "/teams/{teamId}/users",
+  "entry": "listTeamUsers"
+ },
+ {
+  "api": "tac",
+  "method": "POST",
+  "path": "/teams/{teamId}/users",
+  "entry": "createTeamUser"
+ },
+ {
+  "api": "tac",
+  "method": "GET",
+  "path": "/teams/{teamId}/users/{userId}",
+  "entry": "getTeamUser"
+ },
+ {
+  "api": "tac",
+  "method": "PUT",
+  "path": "/teams/{teamId}/users/{userId}",
+  "entry": "updateTeamUser"
+ },
+ {
+  "api": "tac",
+  "method": "DELETE",
+  "path": "/teams/{teamId}/users/{userId}",
+  "entry": "deleteTeamUser"
+ },
+ {
+  "api": "tac",
+  "method": "GET",
+  "path": "/exapps",
+  "entry": "listExApps"
+ }
+]

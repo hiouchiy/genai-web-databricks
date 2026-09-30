@@ -1,0 +1,19 @@
+{
+  "update_mask": "resources,user_api_scopes",
+  "app": {
+    "user_api_scopes": ["files.files"],
+    "resources": [
+      { "name": "postgres", "postgres": {
+          "branch": "projects/${LAKEBASE_PROJECT}/branches/production",
+          "database": "projects/${LAKEBASE_PROJECT}/branches/production/databases/databricks-postgres",
+          "permission": "CAN_CONNECT_AND_CREATE" } },
+      { "name": "claude-sonnet", "serving_endpoint": { "name": "databricks-claude-sonnet-4-6", "permission": "CAN_QUERY" } },
+      { "name": "claude-haiku", "serving_endpoint": { "name": "databricks-claude-haiku-4-5", "permission": "CAN_QUERY" } },
+      { "name": "files-volume", "uc_securable": { "securable_type": "VOLUME", "securable_full_name": "${GENAI_CATALOG}.genai.files", "permission": "WRITE_VOLUME" } },
+      { "name": "rag-app", "app": { "name": "${RAG_APP_NAME}", "permission": "CAN_USE" } },
+      { "name": "secrets-key", "secret": { "scope": "genai", "key": "secrets-key", "permission": "READ" } },
+      { "name": "url-signing-key", "secret": { "scope": "genai", "key": "url-signing-key", "permission": "READ" } },
+      { "name": "user-id-hmac-key", "secret": { "scope": "genai", "key": "user-id-hmac-key", "permission": "READ" } }
+    ]
+  }
+}

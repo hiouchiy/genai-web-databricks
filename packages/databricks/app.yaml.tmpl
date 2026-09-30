@@ -1,0 +1,19 @@
+# 源内 Web on Databricks Apps
+# dist/ をそのままアプリのソースとしてデプロイする（node_modules 不要：依存は esbuild でバンドル済み）
+# ドル記号+波括弧の変数はビルド時（scripts/build.mjs の app ステップ）に環境変数で置換される
+command: ['node', 'server.cjs']
+env:
+  - name: NODE_PATH
+    value: shims
+  - name: GENAI_DB_SCHEMA
+    value: genai
+  - name: GENAI_VOLUME_ROOT
+    value: /Volumes/${GENAI_CATALOG}/genai/files
+  - name: LAKEBASE_ENDPOINT
+    value: ${LAKEBASE_ENDPOINT}
+  - name: GENAI_SECRETS_KEY
+    valueFrom: secrets-key
+  - name: GENAI_URL_SIGNING_KEY
+    valueFrom: url-signing-key
+  - name: GENAI_USER_ID_HMAC_KEY
+    valueFrom: user-id-hmac-key

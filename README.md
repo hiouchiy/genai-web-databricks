@@ -1,3 +1,8 @@
+> [!NOTE]
+> **このリポジトリは [digital-go-jp/genai-web](https://github.com/digital-go-jp/genai-web) の非公式フォークです（デジタル庁の公式リポジトリではありません）。**
+> 源内 Web を **元のアプリケーションコードを変更せずに** Databricks（Databricks Apps / Lakebase / Unity Catalog / Foundation Model API）上で動かす検証版で、追加分は [`packages/databricks/`](packages/databricks/) と [`docs/databricks/`](docs/databricks/) のみです。
+> 設計・移行時の知見・再現手順は [移行ナレッジ](docs/databricks/源内on-Databricks_移行ナレッジ.md) を参照してください。AI アプリ側は [genai-ai-api-databricks](https://github.com/hiouchiy/genai-ai-api-databricks) にあります。
+
 日本語 | [English](README.en.md)
 
 # 源内 Web（AI インターフェース）
